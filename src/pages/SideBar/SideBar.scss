@@ -1,12 +1,27 @@
+$sideBarWidth: 165px;
+
 .sideBar {
   display: flex;
   flex-direction: column;
   margin-left: 8%;
   margin-top: 5px;
 }
+.sideBarList {
+  position: fixed;
+  top: 70px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: $sideBarWidth;
+  height: 500px;
+}
+.sideBarList::-webkit-scrollbar {
+  width: 0;
+}
 h2 {
   margin: 0;
   margin-bottom: 35px;
+  width: $sideBarWidth;
 }
 .sideRow {
   background-color: rgba(238, 106, 106, 0.301);
