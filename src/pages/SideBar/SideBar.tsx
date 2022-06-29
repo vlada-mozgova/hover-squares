@@ -12,11 +12,13 @@ export const SideBar: React.FC = () => {
   return (
     <div className="sideBar">
       <h2>Hover squares</h2>
-      {hover.length ? (
-        hover.map((item, index) => <SideRow key={index} hover={item} />)
-      ) : (
-        <p>no selection</p>
-      )}
+      <div className="sideBarList">
+        {hover.length ? (
+          hover.map((item, index) => <SideRow key={index} hover={item} />)
+        ) : (
+          <p>no selection</p>
+        )}
+      </div>
     </div>
   );
 };
