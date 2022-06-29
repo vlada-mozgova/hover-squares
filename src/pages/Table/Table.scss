@@ -1,9 +1,5 @@
 $hoverColor: rgb(90, 157, 233);
 
-.squareRow {
-  display: flex;
-  flex-direction: row;
-}
 .square {
   border: 0.5px solid rgb(211, 211, 211);
 }
@@ -17,17 +13,18 @@ $hoverColor: rgb(90, 157, 233);
   color: $hoverColor;
 }
 .row-5 {
-  font-size: 10.14vmin;
+  height: 95px;
 }
 .row-15 {
-  font-size: 3.25vmin;
+  height: 30px;
 }
 .row-25 {
-  font-size: 1.88vmin;
+  height: 15px;
 }
 .board {
   display: flex;
   flex-direction: column;
+  width: 50%;
   position: fixed;
   top: 75px;
   left: 0;

@@ -13,12 +13,12 @@ interface Props {
 export const Square: React.FC<Props> = ({ count, row, hover }) => {
   const dispatch = useAppDispatch();
   return (
-    <div className="squareRow">
+    <tr>
       {Array.from({ length: count }, (_, col) => {
         let hoverItem: Hover = { row: row, col: 0, hover: false };
         hover.filter((item) => (item.col === col ? (hoverItem = item) : item));
         return (
-          <div
+          <td
             key={col}
             onMouseOver={() => {
               dispatch(updateHover({ row: row, col: col }));
@@ -26,11 +26,9 @@ export const Square: React.FC<Props> = ({ count, row, hover }) => {
             className={`square row-${count} ${
               hoverItem.hover ? "hoverUp" : "hoverDown"
             }`}
-          >
-            01
-          </div>
+          ></td>
         );
       })}
-    </div>
+    </tr>
   );
 };

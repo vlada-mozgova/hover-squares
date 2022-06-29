@@ -9,14 +9,18 @@ export const Table: React.FC = () => {
 
   return (
     <div className="board">
-      {Array.from({ length: level.field }, (_, i) => (
-        <Square
-          key={i}
-          count={level.field}
-          hover={hover.filter((item) => item.row === i)}
-          row={i}
-        />
-      ))}
+      <table>
+        <tbody>
+          {Array.from({ length: level.field }, (_, i) => (
+            <Square
+              key={i}
+              count={level.field}
+              hover={hover.filter((item) => item.row === i)}
+              row={i}
+            />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
