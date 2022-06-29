@@ -1,0 +1,35 @@
+$hoverColor: rgb(90, 157, 233);
+
+.squareRow {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  border: 0.5px solid rgb(211, 211, 211);
+}
+.hoverDown {
+  background-color: white;
+  color: white;
+}
+.hoverUp {
+  border: 0.5px solid $hoverColor;
+  background-color: $hoverColor;
+  color: $hoverColor;
+}
+.row-5 {
+  padding: 4.1%;
+}
+.row-15 {
+  padding: 0.76%;
+}
+.row-25 {
+  padding: 0.095%;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+}
