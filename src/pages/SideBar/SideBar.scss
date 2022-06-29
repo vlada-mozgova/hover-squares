@@ -6,10 +6,14 @@
 }
 h2 {
   margin: 0;
+  margin-bottom: 35px;
 }
 .sideRow {
   background-color: rgba(238, 106, 106, 0.301);
   border-radius: 5px;
   padding: 10px 15px;
   margin-top: 5%;
+}
+.sideRow:last-child {
+  margin-bottom: 5%;
 }

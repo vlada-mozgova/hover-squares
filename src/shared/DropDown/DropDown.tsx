@@ -27,11 +27,12 @@ export const DropDown: React.FC<Props> = ({
   }, [disabled]);
 
   return (
-    <div className="dropDown">
-      <div
-        className={`dropDownHeader ${disabled ? "disabled" : ""}`}
-        onClick={() => !disabled && setOpen(!open)}
-      >
+    <div
+      className="dropDown"
+      onMouseEnter={() => !disabled && setOpen(!open)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <div className={`dropDownHeader ${disabled ? "disabled" : ""}`}>
         <div>{label}</div>
         {open ? (
           <ArrowUp className="iconArrow" />
