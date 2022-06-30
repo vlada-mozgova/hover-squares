@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ReactComponent as ArrowDown } from "../../assets/arrowDown.svg";
-import { ReactComponent as ArrowUp } from "../../assets/arrowUp.svg";
-import { Level } from "../../pages/types";
+import { ReactComponent as ArrowDown } from "../../../assets/arrowDown.svg";
+import { ReactComponent as ArrowUp } from "../../../assets/arrowUp.svg";
+import { Level } from "../../../pages/types";
 import "./DropDown.scss";
 
 interface Props {

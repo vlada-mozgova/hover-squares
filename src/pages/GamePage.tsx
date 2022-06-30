@@ -1,6 +1,6 @@
 import React from "react";
+import { FrontBar } from "./FrontBar/FrontBar";
 import "./GamePage.scss";
-import { FrontBar } from "./FrontBar";
 import { SideBar } from "./SideBar/SideBar";
 
 export const GamePage: React.FC = () => {

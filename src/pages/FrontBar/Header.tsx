@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { changeLevel, setHover } from "../redux/slices/levelSlice";
-import { Button } from "../shared/Button/Button";
-import { DropDown } from "../shared/DropDown/DropDown";
-import "./GamePage.scss";
-import { Level } from "./types";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { changeLevel, setHover } from "../../redux/slices/levelSlice";
+import { Button } from "../../shared/components/Button/Button";
+import { DropDown } from "../../shared/components/DropDown/DropDown";
+import { Level } from "../types";
+import "../GamePage.scss";
 
 export const Header: React.FC = () => {
   const dispatch = useAppDispatch();
