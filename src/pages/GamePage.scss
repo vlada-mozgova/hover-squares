@@ -1,0 +1,22 @@
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+.gamePage {
+  @include flex();
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  transform: translate(-50%);
+  width: 60%;
+}
+
+.frontBar {
+  @include flex(column);
+  width: 50%;
+}
+
+.header {
+  @include flex();
+}

@@ -1,0 +1,49 @@
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+$border: 1px solid rgb(211, 211, 211);
+
+@mixin boxes {
+  border: $border;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.dropDown {
+  @include flex(column);
+  z-index: 1;
+  width: 80%;
+  cursor: pointer;
+}
+.dropDownHeader {
+  @include flex();
+  justify-content: space-between;
+  @include boxes();
+  padding: 10px 10px 7px 13px;
+}
+.dropDownHeader.disabled {
+  color: rgb(170, 170, 170);
+  cursor: not-allowed;
+}
+.iconArrow {
+  width: 30px;
+  height: 20px;
+  margin: 0;
+}
+.dropDownList {
+  @include boxes();
+  background-color: white;
+  box-shadow: 0 0 4px rgb(170, 170, 170);
+  margin-top: 8px;
+}
+.dropDownRow {
+  padding: 8px 10px;
+  border-bottom: $border;
+}
+.dropDownRow:last-child {
+  border: none;
+}
+.dropDownRow:hover {
+  background-color: rgba(209, 209, 209, 0.555);
+}
